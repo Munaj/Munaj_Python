@@ -1,0 +1,1 @@
+﻿print("Lets try something in python!")
