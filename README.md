@@ -1,2 +1,2 @@
 # Munaj_Python
-This is my respo for learn how git works
+This is my respo for learn how github works
