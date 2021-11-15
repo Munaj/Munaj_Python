@@ -1,3 +1,3 @@
 # Munaj_Python
-This is my respo for learn how github and python  works
-i will commit here random python programs
+This is my respo for learn how to use  github and how to  code in  python.
+I will push here random python programs.
