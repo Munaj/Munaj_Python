@@ -1,4 +1,5 @@
-﻿class drink:
+﻿my_obj = []
+class drink:
     def __init__(self, name, price, percent, capacity):
         self.name = name
         self.price = price
@@ -13,6 +14,13 @@
         capacity = (self.capacity + other.capacity)
         return drink(name, price, percent, capacity)
 
+    def __mul__(self,other):
+        name = f"{other} razy {self.name}"
+        price = self.price*other
+        percent = self.percent
+        capacity = self.capacity*other
+        return drink(name, price, percent, capacity)
+
     def __str__(self):
         return f"Nazwa drinku: {self.name} \nCena: {self.price}\nPercent: {self.percent}\nCapacity: {self.capacity}"
 
@@ -22,8 +30,25 @@ wodka = drink("wodka", 8, 40, 50)
 rum = drink("rum", 9, 60, 50)
 cola = drink("cola", 2, 0, 100)
 lod = drink("lod", 0, 0, 30)
+cytryna = drink("cytryna",1,0,10)
+teqilla = drink("teqilla", 9, 50, 50)
 
-print(wodka + cola)
+
+drink1 = wodka + cola
+drink2 = teqilla *2
+
+
+l = [
+    drink1,
+    drink2,
+    wodka,
+    cola,
+    lod,
+    rum
+]
+
+for x in l:
+    print(x)
 
 
 
