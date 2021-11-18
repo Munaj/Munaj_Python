@@ -23,7 +23,12 @@ class drink:
 
     def __str__(self):
         return f"Nazwa drinku: {self.name} \nCena: {self.price}\nPercent: {self.percent}\nCapacity: {self.capacity}"
-
+    def __or__(self,other):
+        if(self.percent >= other.percent):
+            return self,other
+        else:
+            return other,self
+        
     
 
 wodka = drink("wodka", 8, 40, 50)
@@ -47,8 +52,13 @@ l = [
     rum
 ]
 
+
+for i in range(len(l)):
+    for j in range(len(l)):
+        m,k = (l[i]|l[j])
+        l[i] = m
+        l[j] = k
+
+
 for x in l:
-    print(x)
-
-
-
+    print(F"{x} \n")
