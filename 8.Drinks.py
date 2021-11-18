@@ -41,15 +41,19 @@ teqilla = drink("teqilla", 9, 50, 50)
 
 drink1 = wodka + cola
 drink2 = teqilla *2
+drink3 = rum + cytryna
 
 
 l = [
     drink1,
     drink2,
+    drink3,
     wodka,
     cola,
     lod,
-    rum
+    rum,
+    cytryna,
+    teqilla
 ]
 
 
