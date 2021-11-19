@@ -1,4 +1,4 @@
-﻿my_obj = []
+﻿
 class drink:
     def __init__(self, name, price, percent, capacity):
         self.name = name
