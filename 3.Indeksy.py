@@ -8,8 +8,6 @@ for i in range(0,range_of_arr):
         temp1 =[j,i]
         if(zbior[i]+zbior[j] == 6 ):
             if(temp1 not in  indeksy):
-                print(f"Suma liczb o Indeksach {i} i {j} jest równa 6" )
                 indeksy.append([i,j])
-                print(temp)
+                
 print(indeksy)
-#it not much but it's honest work
