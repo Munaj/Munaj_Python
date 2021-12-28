@@ -19,7 +19,3 @@ prices = [x128-ram_4gbs,x128,x128-(2*ram_4gbs)+(2*ram_8gbz)+50,
             x512-ram_4gbs+50,x512,x512-(2*ram_4gbs)+(2*ram_8gbz)+100]
 
 i=0
-for b in ram_ssd:
-    a = re.sub("4/256",b,x)
-    print(f"{a};{prices[i]}")
-    i = i + 1

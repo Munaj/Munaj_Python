@@ -1,1 +1,0 @@
-    e.delete(0,END)
